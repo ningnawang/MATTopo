@@ -10,7 +10,7 @@ sudo apt install mesa-common-dev
 sudo apt-get install libcgal-dev
 ```
 
-2. This project heavily relies on sub-modules in **extern/mat_modules**, please make sure **mat_modules** exists and is runnable. 
+2. This project heavily relies on sub-modules in **extern/mat_modules**, please make sure **[mat_modules](https://github.com/ningnawang/mat_modules)** exists and is runnable. Normally you don't need to do anything with it, linux command `$cmake ..` will do the work for you (see Section **Build**).
 
 3. Please also install following dependencies:
     * CMake
@@ -84,7 +84,7 @@ v x y z r
 e v1 v2
 f v1 v2 v3
 ```
-One can load the *.ma file using **Blender** with an open-sourced [addon](https://github.com/songshibo/blender-mat-addon).
+One can load the *.ma file using **Blender** with an open-sourced [blender-mat-addon](https://github.com/songshibo/blender-mat-addon).
 
 2. The header ofr **.ply** will show the statistics of all vertices, faces and edges. Here edges consists of two parts as described above.
 ```
