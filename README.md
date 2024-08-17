@@ -1,5 +1,15 @@
 # MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram
 
+## Please kindly cite our paper as:
+```
+@article{wang2024mattopo,
+  title={MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram},
+  author={Wang, Ningna and Huang, Hui and Song, Shibo and Wang, Bin and Wang, Wenping and Guo, Xiaohu},
+  journal={arXiv preprint arXiv:2403.18761},
+  year={2024}
+}
+```
+
 ## Dependencies:
 
 1. Please make sure following libs are up-to-date:
@@ -96,4 +106,5 @@ element edge xxx
 ```
 
 We recommend using **Blender** to view the 3D medial meshes' in PLY format, as it shows correct statistics of not only vertices and faces, but also all edges, including 1d curves. If you open the PLY/OBJ file with **MeshLab**, only vertices and faces shows correctly, however, 1D curves will **NOT** be shown/counted in MeshLab.
+
 
