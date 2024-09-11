@@ -3,10 +3,13 @@
 ## Please kindly cite our paper as:
 ```
 @article{wang2024mattopo,
-  title={MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram},
-  author={Wang, Ningna and Huang, Hui and Song, Shibo and Wang, Bin and Wang, Wenping and Guo, Xiaohu},
-  journal={arXiv preprint arXiv:2403.18761},
-  year={2024}
+  title.    = {MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram},
+  author.   = {Wang, Ningna and Huang, Hui and Song, Shibo and Wang, Bin and Wang, Wenping and Guo, Xiaohu},
+  journal   = {ACM Transactions on Graphics (TOG)},
+  year      = {2024},
+  publisher = {ACM},
+  booktitle = {ACM SIGGRAPH Asia 2024 Papers},
+  series = {SIGGRAPH Asia '24}
 }
 ```
 
