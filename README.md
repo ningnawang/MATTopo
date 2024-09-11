@@ -2,6 +2,7 @@
 
 - Project Link: https://ningnawang.github.io/projects/2024_mattopo
 - Paper Link: https://arxiv.org/abs/2403.18761
+- Video link: https://www.youtube.com/watch?v=8AxJYVtU0SA
 
 ## Please kindly cite our paper as:
 ```
