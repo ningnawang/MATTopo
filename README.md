@@ -11,9 +11,14 @@
   author.   = {Wang, Ningna and Huang, Hui and Song, Shibo and Wang, Bin and Wang, Wenping and Guo, Xiaohu},
   journal   = {ACM Transactions on Graphics (TOG)},
   year      = {2024},
+  address   = {New York, NY, USA},
   publisher = {ACM},
+  volume    = {43},
+  number    = {4},
+  url       = {https://doi.org/10.1145/3687763},
+  doi       = {10.1145/3687763},
   booktitle = {ACM SIGGRAPH Asia 2024 Papers},
-  series = {SIGGRAPH Asia '24}
+  series    = {SIGGRAPH Asia '24}
 }
 ```
 
