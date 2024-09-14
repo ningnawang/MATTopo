@@ -22,6 +22,8 @@
 }
 ```
 
+![](./figures/teaser.pdf)
+
 ## Dependencies:
 
 1. Please make sure following libs are up-to-date:
