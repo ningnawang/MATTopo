@@ -1,5 +1,7 @@
 # MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram
 
+![](./figures/teaser.png)
+
 - Project Link: https://ningnawang.github.io/projects/2024_mattopo
 - Paper Link: https://arxiv.org/abs/2403.18761
 - Video link: https://www.youtube.com/watch?v=8AxJYVtU0SA
@@ -22,7 +24,6 @@
 }
 ```
 
-![](./figures/teaser.png)
 
 ## Dependencies:
 
