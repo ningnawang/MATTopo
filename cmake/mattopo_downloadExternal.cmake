@@ -74,11 +74,10 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(json)
 endfunction()
 
-# mat_modules
-function(rpd_download_mat_modules)
-	rpd_download_project(mat_modules
-		# GIT_REPOSITORY git@github.com:ningnawang/mat_modules.git
-		GIT_REPOSITORY https://github.com/ningnawang/mat_modules.git
-		GIT_TAG v1.0
+# libmat
+function(rpd_download_libmat)
+	rpd_download_project(libmat
+		GIT_REPOSITORY https://github.com/ningnawang/libmat.git
+		GIT_TAG v0.0.1
 	)
 endfunction()

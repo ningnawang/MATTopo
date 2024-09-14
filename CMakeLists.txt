@@ -100,9 +100,9 @@ target_link_libraries(${PROJECT_NAME} general ${CUDA_LIBRARIES})
 
 # add common headers
 target_include_directories(${PROJECT_NAME} PUBLIC 
-    ${EXTERNAL_DIR}/mat_modules/include
-    ${EXTERNAL_DIR}/mat_modules/src/IO
-    ${EXTERNAL_DIR}/mat_modules/src/matfun
-    ${EXTERNAL_DIR}/mat_modules/src/matfun_fix
-    ${EXTERNAL_DIR}/mat_modules/src/rpd3d_api
+    ${EXTERNAL_DIR}/libmat/include
+    ${EXTERNAL_DIR}/libmat/src/IO
+    ${EXTERNAL_DIR}/libmat/src/matfun
+    ${EXTERNAL_DIR}/libmat/src/matfun_fix
+    ${EXTERNAL_DIR}/libmat/src/rpd3d_api
 )

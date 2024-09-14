@@ -1,7 +1,7 @@
 *build*/*
 extern/polyscope*
 extern/.*
-extern/mat_modules*
+extern/libmat*
 extern/geogram*
 .vscode*
 houdini*/*

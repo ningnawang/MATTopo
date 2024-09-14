@@ -35,7 +35,7 @@ sudo apt install mesa-common-dev
 sudo apt-get install libcgal-dev
 ```
 
-2. This project heavily relies on sub-modules in **extern/mat_modules**, please make sure **[mat_modules](https://github.com/ningnawang/mat_modules)** exists and is runnable. Normally you don't need to do anything with it, linux command `$cmake ..` will do the work for you (see Section **Build**).
+2. This project heavily relies on sub-modules in **extern/libmat**, please make sure **[LibMAT](https://github.com/ningnawang/libmat.git)** exists and is runnable. Normally you don't need to do anything with it, linux command `$cmake ..` will do the work for you (see Section **Build**).
 
 3. Please also install following dependencies:
     * CMake
