@@ -22,7 +22,7 @@
 }
 ```
 
-![](./figures/teaser.pdf)
+![](./figures/teaser.png)
 
 ## Dependencies:
 
