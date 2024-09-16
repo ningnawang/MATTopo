@@ -9,8 +9,8 @@
 ## Please kindly cite our paper as:
 ```
 @article{wang2024mattopo,
-  title.    = {MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram},
-  author.   = {Wang, Ningna and Huang, Hui and Song, Shibo and Wang, Bin and Wang, Wenping and Guo, Xiaohu},
+  title    = {MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram},
+  author   = {Wang, Ningna and Huang, Hui and Song, Shibo and Wang, Bin and Wang, Wenping and Guo, Xiaohu},
   journal   = {ACM Transactions on Graphics (TOG)},
   year      = {2024},
   address   = {New York, NY, USA},
