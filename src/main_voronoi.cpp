@@ -73,11 +73,11 @@ void printDevProp() {
 
 int main(int argc, char** argv) {
   // printDevProp();
-  if (3 > argc) {
-    std::cerr
-        << "Usage: " << argv[0]
-        << "./bin/MATTOPO <tet_mesh.msh> <num_spheres> <optional: non_cad>"
-        << std::endl;
+  std::string instruction =
+      "./bin/MATTOPO <tet_mesh.msh> <num_spheres> <cad/non_cad> <optional: "
+      "thinning_threshold, default=0.3, smaller less aggressive thinning>";
+  if (4 > argc) {
+    std::cerr << "Usage: " << argv[0] << instruction << std::endl;
     return 1;
   }
 
@@ -97,7 +97,7 @@ int main(int argc, char** argv) {
     if (file_path == "non_cad") {
       printf("loading non_cad model: %s\n", tet_mesh_file.c_str());
       load_file_flag = 3;
-    } else {
+    } else if (file_path == "cad") {
       std::string file_ext = get_file_ext(file_path);
       if (file_ext == "sph") {
         printf("loading sph file: %s\n", file_path.c_str());
@@ -106,6 +106,9 @@ int main(int argc, char** argv) {
         printf("loading ma file: %s\n", file_path.c_str());
         load_file_flag = 2;
       }
+    } else {
+      std::cerr << "Usage: " << argv[0] << instruction << std::endl;
+      return 1;
     }
   }
 
@@ -239,6 +242,16 @@ int main(int argc, char** argv) {
   main_gui.set_rt(rt);
   main_gui.set_medial_mesh(mmesh);
   main_gui.set_rpd3d(rpd3d);
+
+  // set threshold for thinning
+  main_gui.set_thinning_thres(0.1);
+  if (argv[4]) {
+    float thres = atof(argv[4]);
+    if (thres > 0) {
+      printf("Setting thinning threshold to: %f\n", thres);
+      main_gui.set_thinning_thres(thres);
+    }
+  }
 
   if (load_file_flag == 1) {
     // load spheres .sph

@@ -59,6 +59,9 @@ void MainGuiWindow::set_rpd3d(RPD3D_GPU& _rpd3d) {
   rpd3d->init(this->tet_mesh, this->sf_mesh, this->params);
   rpd3d->set_spheres(this->all_medial_spheres);
 }
+void MainGuiWindow::set_thinning_thres(const double& _thinning_thres) {
+  given_thinning_thres = _thinning_thres;
+}
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////
 // Main Iterations functions
@@ -553,7 +556,6 @@ void MainGuiWindow::auto_all_non_cad() {
   //                   true /*is_save_dup_cnt*/);
 
   // thinning
-  instance_->given_thinning_thres = 0.1;
   prune(*(instance_->all_medial_spheres), *(instance_->mmesh),
         instance_->given_thinning_thres, true /*is_dup_cnt*/,
         false /*is_import_given*/, false /*is_sort_randomly*/,

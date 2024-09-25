@@ -32,6 +32,8 @@ class MainGuiWindow {
   std::vector<Vector3> pc_vertices;  // (non-restricted) powercell vertices
   std::set<aint2> checked_mmesh_edges;
   bool is_non_cad = false;
+  // smaller the value, less aggresive the thinning
+  double given_thinning_thres = 0.1;
 
   // pointers
   Parameter* params = nullptr;  // not const, update site_k
@@ -62,6 +64,7 @@ class MainGuiWindow {
   void set_medial_mesh(MedialMesh& _mmesh);
   // call after set_tet_mesh(), set_sf_mesh(), set_params()
   void set_rpd3d(RPD3D_GPU& _rpd3d);
+  void set_thinning_thres(const double& _thinning_thres);
 
  public:
   MainGuiWindow();
@@ -148,7 +151,6 @@ class MainGuiWindow {
   // Medial Mesh
   int given_mat_face_id = -1;
   void show_medial_mesh(const MedialMesh& mmesh, int given_mat_face_id = -1);
-  double given_thinning_thres = 0.3;
   void show_medial_edges(const MedialMesh& mmesh);
   // debug
   int given_mat_edge_v1 = -1, given_mat_edge_v2 = -1;
