@@ -75,7 +75,7 @@ int main(int argc, char** argv) {
   // printDevProp();
   std::string instruction =
       "./bin/MATTOPO <tet_mesh.msh> <num_spheres> <cad/non_cad> <optional: "
-      "thinning_threshold, default=0.3, smaller less aggressive thinning>";
+      "thinning_threshold, default=0.1, bigger more aggressive thinning>";
   if (4 > argc) {
     std::cerr << "Usage: " << argv[0] << instruction << std::endl;
     return 1;
