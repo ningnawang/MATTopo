@@ -79,12 +79,12 @@ The input of our method is the tetrahedral mesh in **.msh** format, one can use 
 
 1. For running **NON-CAD** model (organic models), please run:
 ```bash
-$ ./bin/MATTOPO <tet_mesh.msh> <nb_spheres> non_cad
+$ ./bin/MATTOPO <tet_mesh.msh> <nb_spheres> non_cad <optional: thinning_threshold, default=0.1, bigger more aggressive thinning>
 ```
 
 2. For running **CAD** model with sharp edges and corners predetected, please run:
 ```bash
-$ ./bin/MATTOPO <tet_mesh.msh> <nb_spheres>
+$ ./bin/MATTOPO <tet_mesh.msh> <nb_spheres> cad <optional: thinning_threshold, default=0.1, bigger more aggressive thinning>
 ```
 
 ## Output & Format
