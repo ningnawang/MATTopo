@@ -1,10 +1,8 @@
-# MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram
+# MATTopo: Topology-preserving Medial Axis Transform with Restricted Power Diagram :star2: SIGGRAPH Asia 2024
+
+:pineapple: [[**MATTopo Project**](https://ningnawang.github.io/projects/2024_mattopo/)] :pineapple: [[**MATTopo Paper** (low res)](https://arxiv.org/abs/2403.18761)] :pineapple: [[**MATTopo Code**](https://github.com/ningnawang/MATTopo)] :pineapple: [[**MATTopo Video** (YouTube)](https://www.youtube.com/watch?v=8AxJYVtU0SA)] :pineapple: [[**MATTopo Video** (Bilibili)](https://www.bilibili.com/video/BV1ZKxNeeEPF/?share_source=copy_web&vd_source=085704da2cca04123412fb29bb28af85)]
 
 ![](./figures/teaser.png)
-
-- Project Link: https://ningnawang.github.io/projects/2024_mattopo
-- Paper Link: https://arxiv.org/abs/2403.18761
-- Video link: https://www.youtube.com/watch?v=8AxJYVtU0SA
 
 ## Please kindly cite our paper as:
 ```
@@ -25,6 +23,13 @@
 ```
 
 
+## Related Project MATFP:
+Our previous **SIGGRAPH Asia 2022** project **Computing Medial Axis Transform with Feature Preservation via Restricted Power Diagram** preserves the features of 3D CAD models.
+
+:cactus: [[**MATFP Project**](https://ningnawang.github.io/projects/2022_matfp/)]  :cactus: [[**MATFP Paper** (low res)](https://arxiv.org/abs/2210.13676)] :cactus: [[**MATFP Video** (YouTube)](https://youtu.be/0kP_EMtER-w?si=CyLhzKGUlTysoEUN)]  :cactus: [[**MATFP Video** (Bilibili)](https://www.bilibili.com/video/BV11hxqeqEcS/?share_source=copy_web&vd_source=085704da2cca04123412fb29bb28af85)]
+
+
+
 ## Dependencies:
 
 1. Please make sure following libs are up-to-date:
@@ -41,6 +46,7 @@ sudo apt-get install libcgal-dev
     * CMake
     * CGAL
     * Eigen3
+    * CUDA
 
 ## Build
 
